@@ -1,0 +1,206 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.d-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.p-relative {
+  position: relative;
+}
+
+.p-absolute {
+  position: absolute;
+}
+
+.c-pointer {
+  cursor: pointer;
+}
+
+.nav-main {
+  width: 100%;
+  padding: 25px 0px;
+  background-color: white;
+  -webkit-box-shadow: 9px 2px 10px #00000047;
+          box-shadow: 9px 2px 10px #00000047;
+}
+
+.nav-main .navcontainer {
+  width: 97%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media (max-width: 1200px) {
+  .nav-main .navcontainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.nav-main .navcontainer .navLinks_and_btns {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media (max-width: 1050px) {
+  .nav-main .navcontainer .navLinks_and_btns {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.nav-main .navcontainer .nav-li-a {
+  color: #262626;
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.nav-main .navcontainer .nav-li-a:hover {
+  color: #3bc8f5;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.nav-main .nav-mainbtn {
+  gap: 32PX;
+  padding: 20px 0;
+  margin-left: 50px;
+}
+
+.nav-main .nav-mainbtn li {
+  white-space: nowrap;
+}
+
+.nav-main .navloginbtn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 22px;
+}
+
+.nav-main .navloginbtn li button {
+  width: 87px;
+  height: 34px;
+  border: none;
+  border-radius: 20px;
+  color: white;
+  background-color: #3bc8f5;
+}
+
+.nav-main .navloginbtn li button i {
+  margin-left: 6px;
+}
+
+.nav-main .navloginbtn li button:hover {
+  background-color: #68d1f5;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.nav-main .navloginbtn .share-button-pop {
+  display: none;
+  width: 45%;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  text-align: left;
+  -webkit-box-shadow: 9px 2px 10px #00000047;
+          box-shadow: 9px 2px 10px #00000047;
+}
+
+.nav-main .navloginbtn .share-button-pop .share-button-pop-text {
+  padding: 35px;
+  color: white;
+  background-color: #3bc8f5;
+}
+
+.nav-main .navloginbtn .share-button-pop .share-button-pop-social {
+  padding: 20px;
+  background-color: white;
+}
+
+.nav-main .navloginbtn .share-button-pop .share-button-pop-social p {
+  font-size: 1.8rem;
+  color: #262626;
+}
+
+.nav-main .navloginbtn .share-button-pop .share-button-pop-social .share-button-social-icon {
+  color: #3bc8f5;
+  font-size: 3rem;
+}
+
+.nav-main .navloginbtn .share-button-pop .share-button-pop-social .share-button-social-icon i {
+  margin-left: 15px;
+  margin-top: 20px;
+}
+
+.nav-main .navloginbtn .share-button-pop .share-button-pop-social .share-button-social-icon i:first-child {
+  margin-left: 0px;
+}
+
+.nav-main .navloginbtn .en-nav-btn {
+  font-size: 13px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.nav-main .navloginbtn .en-nav-btn i {
+  font-size: 30px;
+  margin-right: 5px;
+}
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,149 @@
+@import "mixins";
+@import "variables";
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.d-flex{
+    display: flex;
+}
+.p-relative{
+    position: relative;
+}
+.p-absolute{
+    position: absolute;
+}
+
+.c-pointer{
+    cursor: pointer;
+}
+
+.nav-main{
+width: 100%;
+
+padding: 25px 0px;
+    background-color: white;
+    box-shadow: 9px 2px 10px #00000047;
+
+
+
+.navcontainer{
+    width: 97%;
+    margin: 0 auto;
+    @include flexprop;
+
+    @include smallDesktops{
+       flex-direction: column;
+    }
+
+
+    .navLinks_and_btns{
+        width: 100%;
+        @include flexprop;
+        
+        @include smallDesktops1050{
+            flex-direction: column;
+        }
+    }
+
+    .nav-li-a{
+        color: $grey-color;
+        @include navfontsize;
+
+        &:hover{
+            color: $primary-color;
+            transition: all .3s ease;
+        }
+    }
+    
+    
+}
+
+.nav-mainbtn{
+    gap: 32PX;
+    padding: 20px 0;
+    margin-left: 50px;
+    li{
+        white-space: nowrap;
+    }
+}
+.navloginbtn{
+    @include flexprop;
+    gap: 22px;
+    li{
+        
+        button{
+            width: 87px;
+            height: 34px;
+            border: none;
+            border-radius: 20px;
+            color: white;
+            background-color: $primary-color;
+
+            i{
+                margin-left: 6px;
+            }
+            &:hover{
+                background-color: #68d1f5;
+                transition: all .3s ease;
+            }
+        }
+    }
+    .share-button-pop{
+        display: none;
+        width: 45%;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        text-align: left;
+        box-shadow: 9px 2px 10px #00000047;
+
+        .share-button-pop-text{
+            padding: 35px;
+            color: white;
+            background-color: $primary-color;
+        }
+        .share-button-pop-social{
+            padding: 20px;
+            background-color: white;
+            
+            p{
+                font-size: $font-big;
+                color: $grey-color;
+            }
+            .share-button-social-icon{
+                color: $primary-color;
+                font-size: 3rem;
+                i{
+                    margin-left: 15px;
+                    margin-top: 20px;
+                    &:first-child{
+                        margin-left: 0px;
+                    }
+                }
+            }
+        }
+    }
+    .en-nav-btn{
+        font-size: $font-small;
+        @include flexprop;
+        i{
+            font-size: 30px;
+            margin-right: 5px;
+        }
+        
+    }
+    
+}
+}
+
+ 

@@ -1,0 +1,46 @@
+@mixin navfontsize{
+    font-size: $font-small;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+@mixin flexprop {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+}
+
+
+
+$smallDesktops: 1200px;
+ 
+@mixin smallDesktops {
+    @media (max-width: $smallDesktops)  {
+      @content;
+    }
+  } 
+
+  $smallDesktops1050: 1050px;
+ 
+@mixin smallDesktops1050 {
+    @media (max-width: $smallDesktops1050)  {
+      @content;
+    }
+  }
+
+  $tablet: 990px;
+ 
+  @mixin tablet {
+      @media (max-width: $tablet)  {
+        @content;
+      }
+    }
+
+    $mobile: 768px;
+ 
+  @mixin mobile {
+      @media (max-width: $mobile)  {
+        @content;
+      }
+    }
