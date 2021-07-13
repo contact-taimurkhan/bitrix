@@ -34,10 +34,12 @@ a {
 
 .nav-main {
   width: 100%;
+  position: relative;
   padding: 25px 0px;
   background-color: white;
-  -webkit-box-shadow: 9px 2px 10px #00000047;
-          box-shadow: 9px 2px 10px #00000047;
+  -webkit-box-shadow: 0 0 15px 0 #6c757d;
+          box-shadow: 0 0 15px 0 #6c757d;
+  z-index: 1;
 }
 
 .nav-main .navcontainer {
@@ -231,11 +233,13 @@ a {
 .hero-section {
   width: 100%;
   background: linear-gradient(135deg, #08c1ef 0%, #6dcf73 100%);
-  z-index: -2;
+  overflow: hidden;
 }
 
 .hero-section .hero-section-cont {
-  width: 100%;
+  width: 90%;
+  margin: 0 auto;
+  padding: 80px 0px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -245,10 +249,27 @@ a {
   text-align: center;
 }
 
+@media (max-width: 990px) {
+  .hero-section .hero-section-cont {
+    width: 100%;
+    padding: 20px 0px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-section .hero-section-cont {
+    width: 100%;
+    padding: 5px 0px;
+  }
+}
+
 .hero-section .hero-section-cont .hero-section-content {
   text-align: left;
-  width: 40%;
   margin: 0 auto;
+}
+
+.hero-section .hero-section-cont .hero-section-content p {
+  font-size: 24px;
 }
 
 .hero-section .hero-section-cont .hero-section-content .hero-section-text {
@@ -256,6 +277,10 @@ a {
   font-weight: 300;
   letter-spacing: 3px;
   color: white;
+}
+
+.hero-section .hero-section-cont .hero-section-content .hero-section-heading {
+  font-size: 48px;
 }
 
 .hero-section .hero-section-cont .hero-section-content .hero-section-button {
@@ -272,7 +297,36 @@ a {
   transition: all .3s ease;
 }
 
-.hero-section .hero-section-cont .hero-section-img {
-  padding: 70px 0px;
+@media (max-width: 990px) {
+  .hero-section .hero-section-cont .hero-section-content {
+    width: 100%;
+    margin-left: 10px;
+    position: relative;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-section .hero-section-cont .hero-section-content {
+    width: 100%;
+  }
+}
+
+@media (max-width: 990px) {
+  .hero-section .hero-section-cont .hero-section-img {
+    width: 90%;
+    opacity: .5;
+    position: relative;
+    right: -120px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-section .hero-section-cont .hero-section-img {
+    width: 70%;
+    opacity: .5;
+    position: absolute;
+    right: 0px;
+    overflow: hidden;
+  }
 }
 /*# sourceMappingURL=main.css.map */
