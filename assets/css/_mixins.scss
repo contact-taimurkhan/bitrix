@@ -10,6 +10,13 @@
     text-align: center;
 }
 
+@mixin flexpropJustify {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
 
 
 $smallDesktops: 1200px;

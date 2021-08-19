@@ -214,6 +214,16 @@ padding: 25px 0px;
             text-align: left;
             margin: 0 auto;
 
+            @include mobile{
+                width: 100%;
+                flex-direction: column;
+                z-index: 2;
+                margin: 50px 0px;
+
+                @include flexpropJustify;
+                }
+                
+
             
             p{
                 font-size: 24px;
@@ -224,10 +234,19 @@ padding: 25px 0px;
                 font-weight: 300;
                 letter-spacing: 3px;
                 color: white;
+
+                @include mobile{
+                    margin: 15px 0px;
+                }
             }
 
             .hero-section-heading{
                 font-size: 48px;
+
+                @include mobile{
+                    font-size: 36px;
+                    font-weight: 300;
+                }
             }
             .hero-section-button{
                 color: white;
@@ -267,10 +286,10 @@ padding: 25px 0px;
 
 
                 @include mobile{
-                    width: 70%;
+                    width: 50%;
                 opacity: .5;
                 position: absolute;
-                right: 0px;
+                right: -90px;
                 overflow: hidden;
                     }
         }
@@ -278,5 +297,68 @@ padding: 25px 0px;
 }
 
 //hero-section
+
+
+//what-is
+
+.what-is{
+    width: 100%;
+    text-align: center;
+    margin: 80px 0px;
+
+    .what-is-heading{
+        h1{
+            font-size: 48px;
+            font-weight: 300;
+            letter-spacing: 3px;
+        }
+    }
+
+    .what-is-ul-container{
+        width: 100%;
+        @include flexprop;
+        justify-content: center;
+        margin: 40px 0px;
+
+        .what-is-ul{
+            width: 80%;
+        @include flexprop;
+        justify-content: space-between;
+        position: relative;
+            .what-is-li{
+                @include flexprop;
+                flex-direction: column;
+                font-size: $font-small;
+                &::after {
+                    position: absolute;
+                    content: '';
+                    border-top: 3px red dotted;
+                    left: 146px;
+                    bottom: 80px;
+                    width: 60px;
+                }
+
+
+                .what-is-li-icon{
+                    width: 100px;
+                    height: 100px;
+                    transition: transform .3s;
+                    @include flexprop;
+                    justify-content: center;
+                    border-radius: 50%;
+                    background-color: #3bc7f5bd;
+                    margin: 20px 0px;
+                    
+                    &:hover{
+                        transform: scale(1.2);
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+//what-is
 
  
